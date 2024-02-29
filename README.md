@@ -20,4 +20,54 @@ Installation
     python manage.py runserver
  
 
-The API will be accessible at http://localhost:8000/.
+The API will be accessible at http://localhost:8000/
+
+
+**API Endpoints**
+
+The following endpoints are available:
+
+    POST /notes/: Create a new note.
+
+    GET /notes/: Fetch all note.
+   
+    GET /notes/<pk>/: Fetch a note by its primary key.
+
+    GET /notes?title=<substring>: Search notes by title substring.
+
+    PUT/PATCH /notes/<pk>/: Update an existing note.
+
+
+
+**Usage**
+
+   **Creating a Note**
+
+     To create a new note, send a POST request to the /notes/ endpoint with the following JSON payload-
+
+        {
+          "title": "Note Title",
+          "body": "Note Body"
+        }
+
+   **Fetching a Note**
+
+    To fetch a note by its primary key, send a GET request to the /notes/<pk>/ endpoint, where <pk> is the primary key of the note.
+  
+  **Querying Notes by Title Substring**
+  
+    To Search notes by a substring present in the note's title, send a GET request to the /notes? endpoint with the title query parameter set to the desired substring.
+
+  **Updating a Note**
+   
+   To update an existing note, send a PUT request to the /notes/<pk>/ endpoint with the updated note data in the request body.
+  
+**Testing**
+
+ To run the test suite, use the following command-
+
+  python manage.py test
+
+
+  
+
