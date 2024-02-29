@@ -69,5 +69,11 @@ The following endpoints are available:
   python manage.py test
 
 
+**Error Handling**
+
+The API returns appropriate HTTP status codes.
+
+
+
   
 
