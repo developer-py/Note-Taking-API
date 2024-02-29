@@ -19,3 +19,5 @@ Installation
 
     python manage.py runserver
  
+
+The API will be accessible at http://localhost:8000/.
