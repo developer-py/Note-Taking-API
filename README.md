@@ -1,4 +1,5 @@
 **Overview**
+
 The Simple Note Taking API is a RESTful web service built using Django and Django REST Framework. It provides endpoints for creating, fetching, querying, and updating notes without user management. This README provides information on how to use the API, its endpoints, and other relevant details for developers.
 
 **Getting Started**
